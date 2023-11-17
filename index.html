@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div id="home">
+      <div class="profile_name">
+        NB
+        <div class="contact_info">
+          <img src="./img/envelope.png" alt="Email Icon"/>
+          nb.nb@gmail.com
+        </div>
+        <div class="contact_info">
+          <img src="./img/phone.png" alt="Phone Icon"/>
+          +1 234567890
+        </div>
+      </div>
+      <div class="topdiv">
+        <a class="topmenu" href="#about-me">About Me</a>
+        <a class="topmenu" href="#Skills">Skills</a>
+        <a class="topmenu" href="#Projects">Projects</a>
+        <a class="topmenu" href="#Recommendations">Recommendations</a>
+      </div>
+    </div>    
+  </nav>
+
+  <!-- About Me -->
+  <section id="about-me" class="container">
+    <div>
+      <img src="./img/user.avif" class="profile_image" alt="Profile Image"/>
+    </div>
+    <div>
+      <h1>
+        Hi, I'm NB!
+      </h1>
+      <p>
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, voluptatum labore ullam numquam officia enim, quaerat, dolorem quas esse dignissimos ea tempore hic praesentium cumque nostrum maxime perferendis excepturi ut.
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate accusamus in consectetur odit ipsam animi amet fuga nisi doloribus iure, quae odio quisquam pariatur, totam deserunt obcaecati delectus hic autem.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eligendi delectus earum, tempora ipsum itaque voluptates? Ad cupiditate iure minima similique a quo molestias ex enim placeat ipsa, facilis magnam?
+</p>
+   
+</div>
+  </section>
+  
+  <!-- Skills -->
+  <section id="Skills">
+    <h2>Skills:</h2>
+    <div class="all_skills">
+      <div class="skill">
+        <img src="./img/html5.png" alt="HTML5 Icon"/>
+        <h6>HTML</h6>
+        <p>2 years experience</p>
+      </div>  
+
+      <div class="skill">
+        <img src="./img/js.jpeg" alt="JavaScript Icon"/>
+        <h6>JavaScript</h6>
+        <p>3 years experience</p>
+      </div>  
+      
+     
+      <div class="skill">
+        <img src="./img/node.png" alt="Node.js Icon"/>
+        <h6>Node.js</h6>
+        <p>3 years experience</p>
+      </div>  
+
+      <div class="skill">
+        <img src="./img/react.png" alt="React.js Icon"/>
+        <h6>React.js</h6>
+        <p>1 year experience</p>
+      </div>  
+      <!-- Add more skills here -->
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="Projects">
+    <h2>Projects</h2>
+    <div id="projects-container" class="projects-container">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <ul>
+          <li>Designed and developed a personal portfolio website using HTML, CSS, and JavaScript.</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="project-card">
+        <h3>E-commerce Website</h3>
+        <ul>
+          <li>Created an e-commerce website with a user-friendly interface using React.js.</li>
+          <li>Created shopping website with a user-friendly interface with ejs.</li>
+          <li>There is a lot of my works.</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="project-card">
+        <h3>Blog Application</h3>
+        <ul>
+          <li>Developed a blog application with user authentication using Node.js and Express.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommendations -->
+  <section id="Recommendations">
+    <h2>Recommendations</h2>
+    <div class="all_recommendations" id="all_recommendations">
+      <div class="recommendation">
+        <span>&#8220;</span>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum similique tempora veritatis, deserunt sapiente sed molestias explicabo incidunt vel consequuntur amet quia quod dolorum tenetur labore eum sunt accusamus asperiores.
+        <span>&#8221;</span>
+      </div>
+      <!-- Add more recommendations here -->
+    </div>
+  </section>
+
+  <!-- Recommendation Form -->
+  <section id="contact">
+    <div class="flex_center">
+      <fieldset>
+        <legend class="introduction">Leave a Recommendation</legend>          
+        <input type="text" placeholder="Name (Optional)"> <br/>
+        <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+        <div class="flex_center">
+          <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+        </div>
+      </fieldset>
+    </div>
+  </section>
+  
+  <!-- Scroll to Top Button -->
+  <div class="iconbutton">
+    <a href="#home">         
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    </a>
+  </div>
+  
+  <!-- Form Pop-up -->
+  <div class="popup" id="popup" class="flex_center">
+    <img src="./img/checkmark--outline.svg" alt="Checkmark Icon"/>
+    <h3>Thanks for leaving a recommendation!</h3>
+    <button onclick="showPopup(false)">Ok</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
