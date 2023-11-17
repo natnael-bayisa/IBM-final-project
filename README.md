@@ -4,6 +4,6 @@
 --------
 
 ### Project Screenshot
-![](https://github.com/mohammadxxali/Final-Project-with-HTML-CSS-JavaScript/blob/main/Screenshot.png)
+![](https://github.com/natnael-bayisa/IBM-final-project/blob/main/portfolio.png)
 
 ---
